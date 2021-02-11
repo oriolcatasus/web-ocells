@@ -1,0 +1,22 @@
+{
+  "name": "web-ocells",
+  "version": "1.0.0",
+  "description": "Els nostres ocells",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oriolcatasus/web-ocells.git"
+  },
+  "author": "Oriol Catasus Llena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oriolcatasus/web-ocells/issues"
+  },
+  "homepage": "https://github.com/oriolcatasus/web-ocells#readme",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}
