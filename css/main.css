@@ -1,0 +1,15 @@
+#carousel-birds img {
+    height: min(480px, 67vw);
+}
+
+@media screen and (min-width: 750px) {
+    #carousel-birds {
+        width: 640px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #carousel-birds {
+        width: 100%;
+    }
+}

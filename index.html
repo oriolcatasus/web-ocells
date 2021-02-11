@@ -21,7 +21,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div id="navbar-items" class="collapse navbar-collapse mx-5">                        
+                    <div id="navbar-items" class="collapse navbar-collapse mx-4">                        
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a href="#" class="nav-link active" aria-current="page">Inici</a>
@@ -30,18 +30,50 @@
                                 <a href="html/birds.html" class="nav-link">Llistat d'ocells</a>
                             </li>
                         </ul>
-                    </div>
+                    </div>                   
                 </div>
             </nav>
         </header>
-        <main class="flex-grow-1 m-1"></main>
+        <main class="flex-grow-1 d-flex flex-column justify-content-center align-items-center gap-3 m-4">
+            <h1>Benvinguts al web dels ocells</h1>
+            <div id="carousel-birds" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carousel-birds" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carousel-birds" data-bs-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Loriot_d%27Europe_by_Michel_Idre.jpg" class="d-block w-100" alt="">
+                        <div class="carousel-caption">
+                            <h5></h5>
+                            <p><i></i></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Loriot_d%27Europe_by_Michel_Idre.jpg" class="d-block w-100" alt="">
+                        <div class="carousel-caption">
+                            <h5></h5>
+                            <p><i></i></p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-birds" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-birds" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </main>
         <footer class="d-flex justify-content-center align-items-center gap-3 p-3 bg-primary w-100">
-            <span class="text-white">Fet per Oriol Catasús Llena, pots seguir-me a:</span>
-            <a href="https://twitter.com/oriolcatasus" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-twitter fa-lg text-white"></i>
-            </a>
+            <span class="text-white">Fet per Oriol Catasús Llena, segueix-me a:</span>
             <a href="https://www.linkedin.com/in/oriol-catasus/" target="_blank" re="noopener noreferrer">
                 <i class="fab fa-linkedin fa-lg text-white"></i>
+            </a>
+            <a href="https://twitter.com/oriolcatasus" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter fa-lg text-white"></i>
             </a>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
