@@ -2,13 +2,13 @@
     height: min(480px, 67vw);
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 900px) {
     #carousel-birds {
-        width: 640px;
+        width: 850px;
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
     #carousel-birds {
         width: 100%;
     }
