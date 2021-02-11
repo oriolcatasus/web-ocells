@@ -1,4 +1,32 @@
 {
-    "ocells": [],
-    "users": []
+    "ocells": [
+        {
+            "id": 1,
+            "name": "Oriol",
+            "scientificName": "Oriolus oriolus",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Loriot_d%27Europe_by_Michel_Idre.jpg",
+            "sound": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Pirol_N%C3%A4he_Dahme-Mark_%28Andreas_Plank%2C_21.05.2011%29.ogg"
+        },
+        {
+            "id": 2,
+            "name": "Mallarenga petita",
+            "scientificName": "Periparus ater",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/005Large.jpg",
+            "sound": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Periparus_ater.ogg"
+        },
+        {
+            "id": 3,
+            "name": "Puput comuna",
+            "scientificName": "Upupa epops",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Upupa_epops_1_Luc_Viatour.jpg/1280px-Upupa_epops_1_Luc_Viatour.jpg",
+            "sound": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Upupa_epops.ogg"
+        },
+        {
+            "id": 4,
+            "name": "Picot garser gros",
+            "scientificName": "Dendrocopos major",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Keqs_dendrocopos_major.jpg",
+            "sound": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Great_Spotted_Woodpecker_%28Picoides_major%29_%28W1CDR0001405_BD15%29.ogg"
+        }
+    ]
 }
