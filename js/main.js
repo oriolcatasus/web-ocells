@@ -1,6 +1,6 @@
 'use strict';
 
-const numSlides = 3;
+const numSlides = 6;
 
 $(async function() {
     const birds = await getAllBirds();
@@ -34,8 +34,6 @@ $(async function() {
 function getNrandomNumbers(n, max) {
     if (n > max) {
         throw Error();
-    } else if (max === n) {
-        return [...new Array(n).keys()];
     } else {
         const randNums = [];
         for (let i = 0; i < n; ++i) {
