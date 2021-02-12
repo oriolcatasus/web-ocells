@@ -1,6 +1,7 @@
 'use strict';
 
-const API_URL = 'http://localhost:3000/ocells'
+//const API_URL = 'http://localhost:3000/ocells'
+const API_URL = 'https://protected-fortress-60714.herokuapp.com/ocells'
 
 let birds = null;
 
