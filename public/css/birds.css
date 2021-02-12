@@ -1,20 +1,18 @@
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 940px) {
     .card {
         width: 400px;
-        height: auto;
+        height: 400px;
     }
 }
 
-@media screen and (max-width: 920px) and (min-width: 576px) {
+@media screen and (max-width: 940px) and (min-width: 576px) {
     .card {
         width: 47%;
-        height: auto;
     }
 }
 
 @media screen and (max-width: 576px) {
     .card {
         width: 80vw;
-        height: auto;
     }
 }
