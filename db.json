@@ -55,6 +55,34 @@
             "scientificName": "Anas platyrhynchos",
             "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Mallard_080508.jpg",
             "sound": "https://upload.wikimedia.org/wikipedia/commons/9/95/Mallard_%28Anas_platyrhynchos%29_%28W1CDR0001518_BD17%29.ogg"
+        },
+        {
+            "id": 9,
+            "name": "Mallarenga emplomallada",
+            "scientificName": "Lophophanes cristatus",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Lophophanes_cristatus_-Aviemore%2C_Scotland-8.jpg",
+            "sound": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Crested_Tit_%28Lophophanes_cristatus%29_%28W1CDR0001462_BD1%29.ogg"
+        },
+        {
+            "id": 10,
+            "name": "Verderol comú",
+            "scientificName": "Chloris chloris",
+            "img": "https://ca.wikipedia.org/wiki/Verderol#/media/Fitxer:Carduelis_chloris_1_(Marek_Szczepanek).jpg",
+            "sound": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Carduelis_chloris.ogg"
+        },
+        {
+            "id": 11,
+            "name": "Cadernera",
+            "scientificName": "Carduelis carduelis",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/a/a6/De_Stieglitz_lat_Carduelis_carduelis.jpg",
+            "sound": "https://upload.wikimedia.org/wikipedia/commons/a/ab/European_Goldfinch_%28Carduelis_carduelis%29_%28W1CDR0001491_BD15%29.ogg"
+        },
+        {
+            "id": 12,
+            "name": "Mussol comú",
+            "scientificName": "Athene noctua",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Athene_noctua%2C_Ambula%2C_Montenegro_1.jpg",
+            "sound": "https://upload.wikimedia.org/wikipedia/commons/1/19/Athene_noctua_-_Little_Owl_XC309481.mp3"
         }
     ]
 }
