@@ -27,6 +27,34 @@
             "scientificName": "Dendrocopos major",
             "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Keqs_dendrocopos_major.jpg",
             "sound": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Great_Spotted_Woodpecker_%28Picoides_major%29_%28W1CDR0001405_BD15%29.ogg"
+        },
+        {
+            "id": 5,
+            "name": "Pit-roig",
+            "scientificName": "Erithacus rubecula",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/9/95/Rouge_gorge_familier_-_crop_%28WB_correction%29.jpg",
+            "sound": "https://upload.wikimedia.org/wikipedia/commons/a/a5/European_Robin_%28Erithacus_rubecula%29_%28W1CDR0001425_BD16%29.ogg"
+        },
+        {
+            "id": 6,
+            "name": "Tudó",
+            "scientificName": "Columba palumbus",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Columba_palumbus_-garden_post-8.jpg",
+            "sound": "https://upload.wikimedia.org/wikipedia/commons/1/12/Columba_palumbus_birdsong.ogg"
+        },
+        {
+            "id": 7,
+            "name": "Garsa",
+            "scientificName": "Pica pica",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Sroka_Pica_Pica_II.jpg",
+            "sound": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Eurasian_Magpie_%28Pica_pica%29_%28W1CDR0001537_BD28%29.ogg"
+        },
+        {
+            "id": 8,
+            "name": "Ànec collverd",
+            "scientificName": "Anas platyrhynchos",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Mallard_080508.jpg",
+            "sound": "https://upload.wikimedia.org/wikipedia/commons/9/95/Mallard_%28Anas_platyrhynchos%29_%28W1CDR0001518_BD17%29.ogg"
         }
     ]
 }
