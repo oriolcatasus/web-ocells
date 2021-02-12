@@ -1,5 +1,5 @@
 #carousel-birds img {
-    height: min(480px, 67vw);
+    height: min(475px, 67vw);
 }
 
 @media screen and (min-width: 900px) {
