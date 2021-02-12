@@ -30,22 +30,3 @@ $(async function() {
     indicatorContainer.children().first().addClass('active');
     itemContainer.children().first().addClass('active');
 });
-
-function getNrandomNumbers(n, max) {
-    if (n > max) {
-        throw Error();
-    } else {
-        const randNums = [];
-        for (let i = 0; i < n; ++i) {
-            let isDifferent = false;
-            while (!isDifferent) {
-                const num = Math.floor(Math.random() * max);
-                if (!randNums.includes(num)) {
-                    randNums.push(num);
-                    isDifferent = true;
-                }
-            }
-        }
-        return randNums;
-    }
-}

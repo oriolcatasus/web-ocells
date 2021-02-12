@@ -1,5 +1,16 @@
 'use strict';
 
+$(async function() {
+    let birds = await getAllBirds();
+    birds.sort((bird1, bird2) => normalizeStr(bird1.name) > normalizeStr(bird2.name));
+    const params = new URLSearchParams(window.location.search);
+    if (params.has('query')) {
+        const query = normalizeStr(params.get('query'));
+        birds = birds.filter(bird => normalizeStr(bird.name).includes(query));
+    }
+    generateCards(birds);
+});
+
 function generateCards(birds) {
     birds.forEach(bird => {
         $(`<div class="card d-flex flex-column justify-content-between">
