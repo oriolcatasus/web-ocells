@@ -15,7 +15,7 @@ function generateCards(birds) {
     birds.forEach(bird => {
         $(`<div class="card d-flex flex-column justify-content-between">
             <img src="${bird.image}" alt="${bird.name}" class="card-img-top w-100 overflow-hidden">
-            <div class="card-body">
+            <div class="card-body d-flex flex-column justify-content-between">
                 <h5 class="card-title">${bird.name}</h5>
                 <h6 class="card-subtitle mb-3 text-muted d-flex justify-content-between">
                     <i>${bird.scientificName}</i>

@@ -1,4 +1,20 @@
-.card {
-    width: 400px;
-    height: 400px;
+@media screen and (min-width: 920px) {
+    .card {
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 920px) and (min-width: 576px) {
+    .card {
+        width: 47%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card {
+        width: 80vw;
+        height: auto;
+    }
 }
