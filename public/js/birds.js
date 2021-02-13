@@ -24,7 +24,7 @@ function generateCards(birds) {
                     </a>
                 </h6>
                 <audio class="rounded w-100" controls loop>
-                    <source src="${bird.sound}" type="audio/ogg">
+                    <source src="${bird.sound}" type="audio/mpeg">
                 </audio>
             </div>
         </div>`).appendTo('#card-container');
