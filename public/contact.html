@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="h-100" lang="ca">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contacta amb nosaltres</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="css/contact.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" 
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/417263e842.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <header class="bg-primary shadow">
+            <nav class="navbar navbar-expand-md navbar-dark br-primary">
+                <div class="container-fluid gap-lg-5 gap-md-3">
+                    <a href="index.html" class="navbar-brand">Els nostres ocells</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbar-items"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbar-items" class="collapse navbar-collapse d-flex-md justify-content-between">                        
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Inici</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="birds.html" class="nav-link">Llistat d'ocells</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active" aria-current="page">Contacta</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex my-2 my-md-0" onsubmit="searchBird(event)">
+                            <input id="search-input" class="form-control" type="search" placeholder="Cerca" aria-label="Cerca">
+                            <button class="btn rounded-circle" type="submit">
+                                <i class="fas fa-search text-white"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="flex-grow-1 d-flex flex-column align-items-center gap-4 m-4">
+            <form id="contact-form" onsubmit="handleSubmit(event)">
+                <fieldset>
+                    <legend>Contacta amb nosaltres</legend>
+                    <p>Si tens qualsevol consulta, suggeriment o has trobat un error a la pàgina, no dubtis en contactar amb nosaltres</p>
+                    <div class="form-floating mb-3">
+                        <input id="email-input" type="email" class="form-control" aria-describedby="email-description" placeholder="" required>
+                        <label for="email-input">Correu electrònic*</label>
+                        <div id="email-description" class="form-text">
+                            Mai compartirem el teu correu electrònic amb altres persones
+                        </div>
+                    </div>
+                    <fieldset class="d-flex flex-wrap gap-2 mb-3 w-100">
+                        <div class="form-floating flex-grow-1 flex-sm-grow-0">
+                            <input id="name-input" type="text" class="form-control" placeholder="">
+                            <label for="name-input">Nom</label>
+                        </div>
+                        <div class="form-floating flex-grow-1">
+                            <input id="surname-input" type="text" class="form-control" placeholder="">
+                            <label for="surname-input">Cognoms</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="mb-3">
+                        <div class="input-group mb-2">
+                            <label for="type-select" class="input-group-text">Motiu de contacte*</label>
+                            <select class="form-select" required>
+                                <option selected></option>
+                                <option value="1">Consulta profesional</option>
+                                <option value="2">Consulta sobre ocells</option>
+                                <option value="3">Suggeriment sobre el web</option>
+                                <option value="4">Informar d'un error</option>
+                                <option value="5">Altres motius</option>
+                            </select>
+                        </div>
+                        <textarea class="form-control" placeholder="Escriu aquí el teu missatge" aria-label="Escriu aquí el teu missatge" required></textarea>
+                    </fieldset>
+                    <fieldset class="d-flex flex-column flex-sm-row flex-wrap justify-content-between">
+                        <fieldset class="mb-3">
+                            <div class="form-check form-switch mb-1 align-self-start align-self-sm-center">
+                                <input id="tos-input" type="checkbox" class="form-check-input" required>
+                                <label for="tos-input" class="form-check-label">Estic d'acord amb les polítiques d'ús del servei</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input id="email-subscription-input" type="checkbox" class="form-check-input" checked>
+                                <label for="email-subscription-input" class="form-check-label">Vull rebre les novetats del web per correu electrònic</label>
+                            </div>
+                        </fieldset>                    
+                        <button type="submit" class="btn btn-primary align-self-end align-self-sm-center">Enviar</button>                       
+                    </fieldset>                    
+                </fieldset>
+            </form>
+            <div id="alert-submit"></div>
+        </main>
+        <footer class="d-flex justify-content-center align-items-center gap-3 p-3 bg-primary w-100">
+            <span class="text-white">Fet per Oriol Catasús Llena, segueix-me a:</span>
+            <a href="https://www.linkedin.com/in/oriol-catasus/" target="_blank" re="noopener noreferrer">
+                <i class="fab fa-linkedin fa-lg text-white"></i>
+            </a>
+            <a href="https://twitter.com/oriolcatasus" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter fa-lg text-white"></i>
+            </a>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/header.js"></script>
+        <script src="js/contact.js"></script>
+    </body>
+</html>
