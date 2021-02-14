@@ -19,10 +19,14 @@ async function init() {
         return true;
         
     });
-    generateCards(birds);
+    if (birds.length) {
+        generateBirdCards(birds);
+    } else {
+        birdsNotFoundMessage();
+    }    
 }
 
-function generateCards(birds) {
+function generateBirdCards(birds) {
     birds.forEach(bird => {
         const heartType = localStorage.getItem(bird.id) ? 'fas' : 'far';
         $(`<div class="card">
@@ -44,6 +48,13 @@ function generateCards(birds) {
             </div>
         </div>`).appendTo('#card-container');
     });
+}
+
+function birdsNotFoundMessage() {
+    $(`<div class="d-flex flex-column align-items-center gap-4">
+        <i class="far fa-sad-tear fa-7x text-secondary"></i>
+        <p class="text-center fs-2">No s'ha trobat cap ocell que coincideixi amb els criteris de cerca</p>
+    </div>`).appendTo('#card-container');
 }
 
 function heartButton(id) {
