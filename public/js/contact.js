@@ -10,7 +10,7 @@ function handleSubmit(e) {
     } else if (name) {
         alertMessage = `Moltes gràcies per contactar amb nosaltres ${name}, en un termini de tres dies rebràs la nostra resposta`;
     } else {
-        alertMessage = `Moltes gràcies per contactar amb nosaltres, en un termini de tres dies rebrà la nostra resposta`;
+        alertMessage = 'Moltes gràcies per contactar amb nosaltres, en un termini de tres dies rebrà la nostra resposta';
     }
     const hiddenAlert = $('#alert-submit').clone();
     $('#alert-submit').replaceWith(`<div id="alert-submit" class="alert alert-primary" role="alert">${alertMessage}</div>`);
