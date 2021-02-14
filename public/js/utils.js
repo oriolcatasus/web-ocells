@@ -3,20 +3,16 @@
 function getNrandomNumbers(n, max) {
     if (n > max) {
         throw Error();
-    } else {
-        const randNums = [];
-        for (let i = 0; i < n; ++i) {
-            let isDifferent = false;
-            while (!isDifferent) {
-                const num = Math.floor(Math.random() * max);
-                if (!randNums.includes(num)) {
-                    randNums.push(num);
-                    isDifferent = true;
-                }
-            }
-        }
-        return randNums;
     }
+    const randNums = [];
+    for (let i = 0; i < n; ++i) {
+        let num;
+        do {
+            num =  Math.floor(Math.random() * max);
+        } while (randNums.includes(num));
+        randNums.push(num);
+    }
+    return randNums;
 }
 
 function normalizeStr(str) {
