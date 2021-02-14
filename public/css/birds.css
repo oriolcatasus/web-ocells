@@ -1,11 +1,16 @@
-@media screen and (min-width: 940px) {
+@media screen and (min-width: 1400px) {
     .card {
         width: 400px;
-        height: 400px;
     }
 }
 
-@media screen and (max-width: 940px) and (min-width: 576px) {
+@media screen and (max-width: 1400px) and (min-width: 992px) {
+    .card {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 576px) {
     .card {
         width: 47%;
     }
