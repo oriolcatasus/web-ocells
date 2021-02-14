@@ -12,12 +12,9 @@ async function init() {
     birds.sort((bird1, bird2) => {
         const [fav1, fav2] = [localStorage.getItem(bird1.id), localStorage.getItem(bird2.id)];
         if (fav1 && fav2 || !fav1 && !fav2) {
-            return normalizeStr(bird1.name) > normalizeStr(bird2.name)
-        } else if (fav1) {
-            return false;
+            return normalizeStr(bird1.name) > normalizeStr(bird2.name) ? 1 : -1;
         }
-        return true;
-        
+        return fav1 ? -1 : 1;
     });
     if (birds.length) {
         generateBirdCards(birds);
